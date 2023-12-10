@@ -17,17 +17,17 @@ func Index(w http.ResponseWriter, r *http.Request) {
 		http.Redirect(w, r, common.PROXY_WEB_PAGE_PATH, http.StatusFound)
 		return
 	}
-//	if strings.HasPrefix(r.URL.Path, "/turing") {
-//		if !helper.CheckAuth(r) {
-//			helper.UnauthorizedResult(w)
-//			return
-//		}
+	if strings.HasPrefix(r.URL.Path, "/turing") {
+		if !helper.CheckAuth(r) {
+			helper.UnauthorizedResult(w)
+			return
+		}
 	if BingURL == "" {
 		BingURL = common.BING_URL.String()
 	}
 	proxyurl, _ := url.Parse(BingURL)
 		common.NewSingleHostReverseProxy(proxyurl).ServeHTTP(w, r)
-//	} else {
-//	common.NewSingleHostReverseProxy(common.BING_URL).ServeHTTP(w, r)
-//	}
+	} else {
+	common.NewSingleHostReverseProxy(common.BING_URL).ServeHTTP(w, r)
+	}
 }
