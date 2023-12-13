@@ -23,7 +23,7 @@ var (
 	BING_SYDNEY_DOMAIN = "https://sydney.bing.com"
 	// BING_CHAT_URL, _ = url.Parse(BING_CHAT_DOMAIN + "/sydney/ChatHub")
 	BING_SYDNEY_URL, _  = url.Parse(BING_SYDNEY_DOMAIN)
-	BING_URL, _         = url.Parse("https://sokwith-nbing.eu.org")
+	BING_URL, _         = url.Parse("https://sokwith-nbing.hf.space")
 	EDGE_SVC_URL, _     = url.Parse("https://edgeservices.bing.com")
 	KEEP_REQ_HEADER_MAP = map[string]bool{
 		"Accept":                         true,
