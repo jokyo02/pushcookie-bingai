@@ -1,0 +1,18 @@
+# This is a sample GitHub action file that visits a website every hour
+name: Visit Website
+
+# This workflow is triggered every hour
+on:
+  schedule:
+    # Runs at the first minute of every hour
+    - cron: '1 * * * *'
+  workflow_dispatch:
+
+jobs:
+  visit:
+    runs-on: ubuntu-latest
+    steps:
+      # Use curl command to visit the website
+      - name: Visit website
+        run: curl https://mycfoo-vnc-0.hf.space/vnc.html
+
