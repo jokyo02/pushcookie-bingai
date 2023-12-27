@@ -621,7 +621,7 @@ _w['_sydConvTranslation'] = {
   injectedActionCardDeny: '忽略',
   webPageContextPrefix: '已访问网站',
   useGPT4SwitchLabel: '使用 GPT-4',
-  zeroInputSuggestionFallback1: '画一幅画：重庆、夏天、夕阳、城市江边、一个年轻中国女孩大汗淋漓，在船头喝咖啡',
+  zeroInputSuggestionFallback1: '画一幅画：重庆、夏天、夕阳、城市江边、一个年轻中国女孩眼含微笑、大汗淋漓，在船头喝咖啡',
   zeroInputSuggestionFallback2: '对于一个预算有限的六口之家来说，会首选哪三款车型？',
   zeroInputSuggestionFallback3: '使用自己最新的cn.bing的cookie直接过帐户验证获得登录体验',
   zeroInputSuggestionFallback4: '下一流行趋势是什么？我应该在哪里购物可以找到它？',
